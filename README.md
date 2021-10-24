@@ -37,11 +37,11 @@ Walk through            |  Adding account        | Converting currency
       <span style="font-size:15px; color:grey"> # Each module is a collection of related widgets which presents a unique feature </br>&nbsp;&nbsp; or provides a unique experience to the user.
   Each module consists of a page, </br>&nbsp;&nbsp; its respective GetXController and its custom widgets and in some cases its repository. </br>&nbsp;&nbsp;
   Here's an example <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  - /account_module <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  - account_screen.dart <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  - controller.dart <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  - repository.dart <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  - /widgets </br>&nbsp;&nbsp;&nbsp;&nbsp;
+      - /account_module <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      - account_screen.dart <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      - controller.dart <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      - repository.dart <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      - /widgets </br>&nbsp;&nbsp;&nbsp;&nbsp;
   The user interface design is kept in the screens with some level of abstraction, </br>&nbsp;&nbsp;&nbsp;&nbsp; thus the widgets which houses some reusable custom widgets which are used for the </br>&nbsp;&nbsp;&nbsp;&nbsp; respective module alone. </br>&nbsp;&nbsp;&nbsp;&nbsp;
   The controller is where all the respective user logic and interactions are handled and </br>&nbsp;&nbsp;&nbsp;&nbsp; controlled, every controller is initialized on app run by the "P.dart in app/core" which also </br>&nbsp;&nbsp;&nbsp;&nbsp; provides a global access interface to all controllers.
   </span>
