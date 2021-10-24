@@ -16,9 +16,9 @@ A Flutter App DEMO challenge for First Ally.
 
     - /data <br/>
       <span style="font-size:15px; color:grey">
-  # this directory is responsible for containing everything related to app data like models </br>&nbsp;&nbsp;and providers. 
+  # this directory is responsible for containing everything related to app data like models </span> </br>&nbsp;&nbsp;and providers. 
 
-        - /providers </span> <br/>
+        - /providers <br/>
         <span style="font-size:15px; color:grey">
         # Main data providers are contained here for api calls and shared preferences </span>
         
