@@ -1,17 +1,19 @@
 import 'dart:convert';
 import 'dart:io';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:http/http.dart' as http;
 import 'package:first_ally_demo/app/core/utils/custom_exception.dart';
 
 class ApiProvider {
   final String _paystackBaseUrl = "https://api.paystack.co/bank";
+  var secret = dotenv.env['PAYSTACK_SECRET'];
 
   Future<dynamic> getListOfBanks() async {
     var responseJson;
     try {
       final response = await http.get(Uri.parse(_paystackBaseUrl+"?country=nigeria&use_cursor=false"),
           headers: {HttpHeaders.contentTypeHeader: "application/json",
-            HttpHeaders.authorizationHeader: "Bearer sk_test_4591a11b450e04e4d94d482ea30d9deceae710d3"},
+            HttpHeaders.authorizationHeader: "Bearer " + secret!},
       );
 
       responseJson = _response(response);
@@ -26,7 +28,7 @@ class ApiProvider {
     try {
       final response = await http.get(Uri.parse(_paystackBaseUrl+"/resolve?account_number=$accountNumber&bank_code=$bankCode"),
           headers: {HttpHeaders.contentTypeHeader: "application/json",
-            HttpHeaders.authorizationHeader: "Bearer sk_test_4591a11b450e04e4d94d482ea30d9deceae710d3"},
+            HttpHeaders.authorizationHeader: "Bearer " + secret!},
       );
 
       responseJson = _response(response);

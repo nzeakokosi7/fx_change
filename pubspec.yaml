@@ -46,6 +46,7 @@ dependencies:
   avatars: ^2.0.0
   flutter_paystack: ^1.0.5+1
   flutter_toggle_tab: ^1.1.7
+  flutter_dotenv: ^5.0.2
 
 dev_dependencies:
   flutter_test:
@@ -71,6 +72,7 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
+    - .env
     - assets/images/
     - assets/icons/
     - assets/gifs/

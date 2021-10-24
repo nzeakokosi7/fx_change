@@ -11,13 +11,14 @@ import 'package:first_ally_demo/app/services/_auth.dart';
 import 'package:first_ally_demo/app/services/_database.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_paystack/flutter_paystack.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
 
 
 class ConversionController extends GetxController {
-  var publicKey = 'pk_test_3e80c95ecf1ba629cc8ecf4398809f03a8a27f56';
+  var publicKey = dotenv.env['PAYSTACK_KEY'];
   final plugin = PaystackPlugin();
 
   RxString nairaValue = "".obs;
@@ -376,7 +377,7 @@ class ConversionController extends GetxController {
     super.onInit();
     if(AuthService.isLoggedIn()) {
       checkAccounts();
-      plugin.initialize(publicKey: publicKey);
+      plugin.initialize(publicKey: publicKey!);
       transactions!.bindStream(DatabaseService.getTransactionStream());
     }
   }

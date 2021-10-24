@@ -10,6 +10,7 @@ import 'package:first_ally_demo/app/services/_auth.dart';
 import 'package:first_ally_demo/app/services/_database.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:first_ally_demo/app/core/utils/utils.dart';
 
 class AccountController extends GetxController {
   TextEditingController fullName = TextEditingController();
@@ -134,7 +135,7 @@ class AccountController extends GetxController {
     accName = "".obs;
     P.conversion.checkAccounts();
     await Future.delayed(const Duration(milliseconds: 1500));
-    Get.back();
+    Navigator.pop(context);
   }
 
   Future<void> removeBank(BankAccount bankAccount) async {

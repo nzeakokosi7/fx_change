@@ -61,7 +61,7 @@ PIN: 1111 <br/>
       <br/> <span style="font-size:15px; color:grey"> This is where all app services are stored. </span>
 
 - /routes </br>
-  <span style="font-size:15px; color:grey"> #In this repository we I deposied all routes and pages. They're separated into two files,</br> and two classes, one being routes.dart, containing its constant routes and the other <br/> for routing. </span>
+  <span style="font-size:15px; color:grey"> #In this repository I deposited all routes and pages. They're separated into two files,</br> and two classes, one being routes.dart, containing its constant routes and the other <br/> for routing. </span>
   - routes.dart
   This file contains all route constants ex:  
   class Routes { const HOME = '/ home'; }  
