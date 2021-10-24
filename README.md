@@ -12,11 +12,11 @@ A Flutter App DEMO challenge for First Ally.
           <span style="font-size:15px; color:grey"> #Here I created themes for my text widgets. </span>
         - /utils <br/>
           <span style="font-size:15px; color:grey">
-      #Here you can I kept basic dart files (which are not necessarily widgets or models) </br>&nbsp;&nbsp;that run repeatitve operations or tasks. </span>
+      #Here you can I kept basic dart files (which are not necessarily widgets or models) </br>&nbsp;&nbsp;that run repetitive operations or tasks. </span>
 
     - /data <br/>
       <span style="font-size:15px; color:grey">
-  # this directory is responsible for containing everything related to app data like models </span> </br>&nbsp;&nbsp;and providers. 
+  # this directory is responsible for containing everything related to app data like models </br>&nbsp;&nbsp;and providers. </span>
 
         - /providers <br/>
         <span style="font-size:15px; color:grey">
