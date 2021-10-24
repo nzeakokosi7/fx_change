@@ -67,3 +67,4 @@ Walk through            |  Adding account        | Converting currency
 - main.dart <br/>
   <span style="font-size:15px; color:grey">#main application file
 
+### Reference: This READ.me documentation was adapted ideas from [getx_pattern](https://github.com/kauemurakami/getx_pattern)
