@@ -2,6 +2,12 @@
 
 A Flutter App DEMO challenge for First Ally.
 
+A brief preview
+
+Walk through            |  Adding account        | Converting currency
+:-------------------------:|:-------------------------:|:-----
+![](https://github.com/nzeakokosi7/fx_change/blob/master/assets/gifs/walk_through.gif)  |  ![](https://github.com/nzeakokosi7/fx_change/blob/master/assets/gifs/add_account.gif) | ![](https://github.com/nzeakokosi7/fx_change/blob/master/assets/gifs/convert_currency.gif)
+
 ## Getting Started
 ### Details of the project structure explained below
 
