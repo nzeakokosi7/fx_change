@@ -377,8 +377,12 @@ class ConversionController extends GetxController {
     super.onInit();
     if(AuthService.isLoggedIn()) {
       checkAccounts();
-      plugin.initialize(publicKey: publicKey!);
-      transactions!.bindStream(DatabaseService.getTransactionStream());
+      initialise();
     }
+  }
+
+  void initialise() {
+    plugin.initialize(publicKey: publicKey!);
+    transactions!.bindStream(DatabaseService.getTransactionStream());
   }
 }

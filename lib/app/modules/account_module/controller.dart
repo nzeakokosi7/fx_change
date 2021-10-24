@@ -171,9 +171,13 @@ class AccountController extends GetxController {
   void onInit() {
     super.onInit();
     if(AuthService.isLoggedIn()) {
-      checkAndRetrieveUser();
-      getAccounts();
+      initialise();
     }
+  }
+
+  void initialise() {
+    checkAndRetrieveUser();
+    getAccounts();
   }
 
 

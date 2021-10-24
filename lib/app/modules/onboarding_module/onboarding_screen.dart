@@ -33,7 +33,7 @@ class OnBoardingScreen extends StatelessWidget {
       "subtext": "To buy a currency, click on the 'Convert' action bubble on your homepage, "
           "select your desired currency from the drop down, enter the desired amount, then click buy to select or enter the destination account. "
           "After which you'd click proceed , which then inflates the paystack card payment portal, you can use the test card found in this demo; "
-          "or the one in the README.md file on at the root folder of the project on github. "
+          "or the one in the README.md file at the root folder of the project on github. "
           "NB: Make sure the currency of the destination account tallies with your selected currency as it has higher priority.",
       "image": "assets/gifs/convert_currency.gif"
     },

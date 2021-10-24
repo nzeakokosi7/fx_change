@@ -57,9 +57,12 @@ class AuthController extends GetxController {
     await AuthService.login(email.text, password.text);
     if (authR.verify()) {
       if (navigate) {
-        P.account.checkAndRetrieveUser();
+
+        P.account.initialise();
         Get.offAllNamed(Routes.HOME);
         Prefs.setIsFirstTime(false);
+        P.conversion.initialise();
+
         loading.value = false;
         email.text = password.text = "";
       }
