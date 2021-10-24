@@ -1,0 +1,6 @@
+framework module flutter_paystack {
+  umbrella header "flutter_paystack-umbrella.h"
+
+  export *
+  module * { export * }
+}
