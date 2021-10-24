@@ -26,9 +26,9 @@ A Flutter App DEMO challenge for First Ally.
         <span style="font-size:15px; color:grey">
         # Here you'd find data classes, or data models responsible for abstracting objects. </span>
 
-    - /modules <br/>
-      <span style="font-size:15px; color:grey">
-  # Each module is a collection of related widgets which presents a unique feature </br>&nbsp;&nbsp; or provides a unique experience to the user.
+    - /modules 
+      <br/>
+      <span style="font-size:15px; color:grey"> # Each module is a collection of related widgets which presents a unique feature </br>&nbsp;&nbsp; or provides a unique experience to the user.
   Each module consists of a page, </br>&nbsp;&nbsp; its respective GetXController and its custom widgets and in some cases its repository. </br>&nbsp;&nbsp;
   Here's an example <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   - /account_module <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
